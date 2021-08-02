@@ -23,10 +23,7 @@ export default function App() {
     f: [6, "m", "n", "o"],
     g: [7, "p", "q", "r", "s"],
     h: [8, "t", "u", "v"],
-    i: [9, "w", "x", "y", "z"],
-    j: ["*"],
-    k: [0],
-    l: ["#"]
+    i: [9, "w", "x", "y", "z"]
   };
 
   useEffect(() => {
