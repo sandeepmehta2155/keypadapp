@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  //concated string
   const [qwertyString, setQwertyString] = useState("");
 
+  // input from user in keys they press
   const [inputKey, setInputKey] = useState("|");
 
   // const [inputKeyPointer, setInputKeyPointer] = useState(0);
@@ -13,6 +15,8 @@ export default function App() {
   const [timerCounter, setTimerCounter] = useState(0);
 
   const [counterVar, setCounterVar] = useState(0);
+
+  // Keys for input
 
   const keyPad = {
     a: [1, ".", ",", "!"],
@@ -26,6 +30,7 @@ export default function App() {
     i: [9, "w", "x", "y", "z"]
   };
 
+  // for checking debounce and concatenating to string
   useEffect(() => {
     if (timerCounter > 1) {
       clearInterval(counterVar);
